@@ -1,0 +1,7 @@
+{
+  "name": "american-fidelity",
+  "private": true,
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0"
+  }
+}
