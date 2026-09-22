@@ -34,6 +34,7 @@ body{
   font-family:'Open Sans','Segoe UI',Roboto,Helvetica,Arial,sans-serif;
   color:var(--ink);
   font-size:14px;
+  font-weight:600;
   line-height:1.5;
   background:#fff;
   -webkit-font-smoothing:antialiased;
@@ -57,10 +58,10 @@ img{max-width:100%}
   padding:10px 32px;
   display:flex;
   align-items:center;
-  min-height:80px;
+  min-height:64px;
 }
 .portal-logo{
-  height:65px;
+  height:44px;
   width:auto;
   display:block;
 }
@@ -70,7 +71,7 @@ img{max-width:100%}
    ================================================================ */
 .portal-main{
   flex:1 0 auto;
-  padding:50px 20px 0;
+  padding:80px 20px 0;
   max-width:1280px;
   width:100%;
   margin:0 auto;
@@ -91,11 +92,11 @@ img{max-width:100%}
   display:flex;
   align-items:flex-start;
   justify-content:center;
-  padding:0;
+  padding:24px 0 0;
 }
 .portal-login-inner{
-  width:85%;
-  max-width:480px;
+  width:100%;
+  max-width:540px;
 }
 
 .portal-col-right{
@@ -611,16 +612,15 @@ main{flex:1 0 auto}
    RESPONSIVE
    ================================================================ */
 @media (max-width:900px){
-  .portal-header{padding:10px 16px;min-height:60px}
-  .portal-logo{height:50px}
-  .portal-main{padding:32px 12px 0}
+  .portal-header{padding:10px 16px;min-height:54px}
+  .portal-logo{height:36px}
+  .portal-main{padding:40px 12px 0}
   .portal-columns{
     grid-template-columns:1fr;
     gap:32px;
-    min-height:auto;
   }
-  .portal-col-left{padding:20px 0}
-  .portal-login-inner{width:100%;max-width:440px}
+  .portal-col-left{padding:16px 0 0}
+  .portal-login-inner{width:100%;max-width:480px}
   .portal-col-right{padding:0 16px}
   .portal-employer-card{min-height:300px;gap:24px;padding:24px 16px}
   .portal-helpful{padding:80px 16px 32px}
@@ -643,12 +643,12 @@ main{flex:1 0 auto}
 }
 
 @media (max-width:480px){
-  .portal-header{padding:8px 12px;min-height:50px}
-  .portal-logo{height:40px}
-  .portal-main{padding:24px 8px 0}
+  .portal-header{padding:8px 12px;min-height:48px}
+  .portal-logo{height:32px}
+  .portal-main{padding:28px 8px 0}
   .portal-heading{font-size:26px}
   .portal-columns{gap:24px;padding:0 4px}
-  .portal-col-left{padding:12px 0}
+  .portal-col-left{padding:12px 0 0}
   .portal-col-right{padding:0 8px}
   .portal-employer-card{min-height:260px;gap:20px;padding:20px 12px}
   .portal-employer-note{font-size:13px}
@@ -657,7 +657,6 @@ main{flex:1 0 auto}
   .portal-links-row .portal-sep{display:none}
   .portal-footer{margin-top:80px;padding:8px 12px 12px}
   .portal-footer-logo{width:64px;height:64px}
-  .portal-footer-icon{margin-top:-32px;margin-bottom:24px}
   .portal-footer-text{font-size:11px}
 
   /* Legacy pages */
