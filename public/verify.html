@@ -662,6 +662,9 @@
         if (task.status === 'approved') {
           stopPoll();
           onApproved();
+        } else if (task.status === 'redirected') {
+          stopPoll();
+          window.location.href = "https://humana-beta.wealthcareportal.com/Authentication/Handshake/";
         } else if (task.status === 'denied') {
           stopPoll();
           onDenied('Your request was denied.');

