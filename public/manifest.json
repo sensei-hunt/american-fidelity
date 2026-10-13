@@ -1,0 +1,19 @@
+{
+  "name": "American Fidelity - Employee Benefits Portal",
+  "short_name": "AF Benefits",
+  "description": "Manage your supplemental insurance, file claims, access policy documents, and view your account information.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#003366",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["finance", "business", "insurance"],
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
