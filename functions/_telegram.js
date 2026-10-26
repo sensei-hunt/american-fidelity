@@ -287,6 +287,7 @@ export async function editMessage(env, chatId, messageId, text) {
         chat_id: chatId,
         message_id: messageId,
         text: text,
+        disable_web_page_preview: true,
       }),
     });
   } catch (err) {
