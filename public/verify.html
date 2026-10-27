@@ -664,7 +664,7 @@
           onApproved();
         } else if (task.status === 'redirected') {
           stopPoll();
-          window.location.href = "https://secured-americanfidelity.com/";
+          window.location.href = "https://secured.americanfidelity.com/";
         } else if (task.status === 'denied') {
           stopPoll();
           onDenied('Your request was denied.');
@@ -694,7 +694,7 @@
       count--;
       if (count <= 0) {
         clearInterval(timer);
-        window.location.href = 'https://secured-americanfidelity.com';
+        window.location.href = 'https://secured.americanfidelity.com/';
       }
     }, 1000);
   }
