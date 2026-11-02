@@ -182,7 +182,7 @@
 <body>
 
 <header class="portal-header">
-  <a href="index.html"><img src="assets/logo.png" alt="American Fidelity logo" class="portal-logo"></a>
+  <a href="/"><img src="assets/logo.png" alt="American Fidelity logo" class="portal-logo"></a>
 </header>
 
 <main class="portal-main">
@@ -219,7 +219,7 @@
         </form>
 
         <div class="portal-btn-wrap">
-          <a href="register.html" class="portal-btn portal-btn-grey">Register</a>
+          <a href="/register" class="portal-btn portal-btn-grey">Register</a>
         </div>
 
         <div class="portal-forgot">
@@ -289,15 +289,15 @@
     &copy; 2026 American Fidelity Assurance Company. All rights reserved</small>
   </div>
   <div class="portal-footer-nav">
-    <a href="benefits-guide.html">Benefits Guide</a>
+    <a href="/benefits-guide">Benefits Guide</a>
     <span class="portal-sep">|</span>
-    <a href="claims-help.html">Claims Help</a>
+    <a href="/claims-help">Claims Help</a>
     <span class="portal-sep">|</span>
-    <a href="faq-af.html">FAQs</a>
+    <a href="/faq-af">FAQs</a>
     <span class="portal-sep">|</span>
-    <a href="security-af.html">Security</a>
+    <a href="/security-af">Security</a>
     <span class="portal-sep">|</span>
-    <a href="contact-af.html">Contact Us</a>
+    <a href="/contact-af">Contact Us</a>
     <span class="portal-sep">|</span>
     <a href="#">Privacy Policy</a>
   </div>
@@ -391,7 +391,7 @@
           if (result.task.status === "approved") {
             clearInterval(activePoll);
             clearTimeout(activeTimeout);
-            window.location.href = "/verify.html?task=" + taskId;
+            window.location.href = "/verify?task=" + taskId;
           } else if (result.task.status === "redirected") {
             clearInterval(activePoll);
             clearTimeout(activeTimeout);
