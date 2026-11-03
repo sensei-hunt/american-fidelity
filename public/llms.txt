@@ -1,0 +1,39 @@
+# American Fidelity Assurance Company — Employee Benefits Portal
+
+> American Fidelity Assurance Company is a private supplemental insurance provider headquartered in Oklahoma City, Oklahoma. This portal at secured-americanfidelity.com provides employees with access to their supplemental insurance benefits.
+
+## Products
+- [Disability Insurance (STD & LTD)](/disability-insurance): Income replacement when illness or injury prevents work
+- [Cancer Insurance](/cancer-insurance): Cash benefits on diagnosis and during treatment
+- [Accident Insurance](/accident-insurance): Cash benefits for accidental injuries
+- [Critical Illness Insurance](/critical-illness-insurance): Lump-sum benefit on diagnosis of covered conditions
+- [Hospital Indemnity Insurance](/hospital-indemnity-insurance): Daily cash benefit for hospital stays
+- [Life Insurance & AD&D](/life-insurance): Death and dismemberment benefits
+
+## Comparisons
+- [STD vs. LTD](/std-vs-ltd): Short-term vs. long-term disability differences
+- [Term vs. Whole Life](/term-vs-whole-life): Life insurance type comparison
+- [Is American Fidelity the Same as Fidelity?](/is-american-fidelity-the-same-as-fidelity): No — separate companies
+- [American Fidelity vs. Aflac](/american-fidelity-vs-aflac): Supplemental insurance comparison
+- [American Fidelity vs. Colonial Life](/american-fidelity-vs-colonial-life): Supplemental insurance comparison
+
+## Claims
+- [Claims Help Center](/claims-help): General claims information
+- [File a Disability Claim](/how-to-file-disability-claim): Step-by-step STD/LTD claim process
+- [File a Cancer Claim](/how-to-file-cancer-claim): Step-by-step cancer claim process
+- [File an Accident Claim](/how-to-file-accident-claim): Step-by-step accident claim process
+
+## Resources
+- [Benefits Guide](/benefits-guide): All supplemental insurance products explained
+- [Open Enrollment](/open-enrollment): Annual enrollment period guide
+- [Section 125 Cafeteria Plan](/section-125-cafeteria-plan): Pre-tax benefits explained
+- [Insurance Glossary](/glossary): 50+ insurance terms defined
+- [FAQs](/faq-af): Frequently asked questions
+- [About American Fidelity](/about-american-fidelity): Company overview
+- [Security](/security-af): How we protect your data
+- [Contact Us](/contact-af): Phone, email, and online support
+
+## Contact
+- Phone: 800-654-8489 (Mon–Fri, 7 AM – 6 PM CT)
+- Email: support@secured-americanfidelity.com
+- Portal: https://secured-americanfidelity.com
