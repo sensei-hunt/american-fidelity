@@ -1,0 +1,49 @@
+name: IndexNow Ping
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/**'
+      - 'functions/**'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify IndexNow
+        run: |
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "secured-americanfidelity.com",
+              "key": "737fa7483db4d2e1238b3d59e4832254",
+              "keyLocation": "https://secured-americanfidelity.com/737fa7483db4d2e1238b3d59e4832254.txt",
+              "urlList": [
+                "https://secured-americanfidelity.com/",
+                "https://secured-americanfidelity.com/login",
+                "https://secured-americanfidelity.com/register",
+                "https://secured-americanfidelity.com/benefits-guide",
+                "https://secured-americanfidelity.com/claims-help",
+                "https://secured-americanfidelity.com/faq-af",
+                "https://secured-americanfidelity.com/security-af",
+                "https://secured-americanfidelity.com/contact-af",
+                "https://secured-americanfidelity.com/disability-insurance",
+                "https://secured-americanfidelity.com/cancer-insurance",
+                "https://secured-americanfidelity.com/critical-illness-insurance",
+                "https://secured-americanfidelity.com/hospital-indemnity-insurance",
+                "https://secured-americanfidelity.com/accident-insurance",
+                "https://secured-americanfidelity.com/life-insurance",
+                "https://secured-americanfidelity.com/std-vs-ltd",
+                "https://secured-americanfidelity.com/term-vs-whole-life",
+                "https://secured-americanfidelity.com/is-american-fidelity-the-same-as-fidelity",
+                "https://secured-americanfidelity.com/american-fidelity-vs-aflac",
+                "https://secured-americanfidelity.com/american-fidelity-vs-colonial-life",
+                "https://secured-americanfidelity.com/how-to-file-disability-claim",
+                "https://secured-americanfidelity.com/how-to-file-cancer-claim",
+                "https://secured-americanfidelity.com/how-to-file-accident-claim",
+                "https://secured-americanfidelity.com/glossary",
+                "https://secured-americanfidelity.com/open-enrollment",
+                "https://secured-americanfidelity.com/section-125-cafeteria-plan",
+                "https://secured-americanfidelity.com/about-american-fidelity"
+              ]
+            }'
