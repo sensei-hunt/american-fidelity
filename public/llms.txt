@@ -1,39 +1,53 @@
-# American Fidelity Assurance Company — Employee Benefits Portal
+# American Fidelity Employee Benefits Portal
 
-> American Fidelity Assurance Company is a private supplemental insurance provider headquartered in Oklahoma City, Oklahoma. This portal at secured-americanfidelity.com provides employees with access to their supplemental insurance benefits.
+> Official American Fidelity Assurance Company employee benefits portal at secured-americanfidelity.com. Manage supplemental insurance, file disability, cancer, accident, and life insurance claims, enroll in benefits, and access your account online.
 
-## Products
-- [Disability Insurance (STD & LTD)](/disability-insurance): Income replacement when illness or injury prevents work
-- [Cancer Insurance](/cancer-insurance): Cash benefits on diagnosis and during treatment
-- [Accident Insurance](/accident-insurance): Cash benefits for accidental injuries
-- [Critical Illness Insurance](/critical-illness-insurance): Lump-sum benefit on diagnosis of covered conditions
-- [Hospital Indemnity Insurance](/hospital-indemnity-insurance): Daily cash benefit for hospital stays
-- [Life Insurance & AD&D](/life-insurance): Death and dismemberment benefits
+## About
 
-## Comparisons
-- [STD vs. LTD](/std-vs-ltd): Short-term vs. long-term disability differences
-- [Term vs. Whole Life](/term-vs-whole-life): Life insurance type comparison
-- [Is American Fidelity the Same as Fidelity?](/is-american-fidelity-the-same-as-fidelity): No — separate companies
-- [American Fidelity vs. Aflac](/american-fidelity-vs-aflac): Supplemental insurance comparison
-- [American Fidelity vs. Colonial Life](/american-fidelity-vs-colonial-life): Supplemental insurance comparison
+American Fidelity Assurance Company is a private supplemental insurance provider headquartered in Oklahoma City, Oklahoma. Founded in 1960, American Fidelity serves employees in education, public sector, healthcare, and auto dealerships through employer-sponsored voluntary benefit programs. This portal at secured-americanfidelity.com provides policyholders and participants with secure access to their supplemental insurance benefits.
+
+## Insurance Products
+
+- [Disability Insurance (STD & LTD)](https://secured-americanfidelity.com/disability-insurance): Income replacement coverage when illness or injury prevents work, with short-term (3-6 months) and long-term (up to retirement) options
+- [Cancer Insurance](https://secured-americanfidelity.com/cancer-insurance): Lump-sum and treatment cash benefits upon cancer diagnosis, paid regardless of other insurance
+- [Accident Insurance](https://secured-americanfidelity.com/accident-insurance): Cash benefits for accidental injuries including fractures, dislocations, ER visits, and surgery
+- [Critical Illness Insurance](https://secured-americanfidelity.com/critical-illness-insurance): Lump-sum payment on diagnosis of heart attack, stroke, organ transplant, kidney failure, and other covered conditions
+- [Hospital Indemnity Insurance](https://secured-americanfidelity.com/hospital-indemnity-insurance): Daily cash benefit for hospital stays, ICU confinement, and outpatient surgery
+- [Life Insurance & AD&D](https://secured-americanfidelity.com/life-insurance): Basic, supplemental, and dependent life insurance plus accidental death & dismemberment coverage
+
+## Comparisons & Guides
+
+- [STD vs. LTD](https://secured-americanfidelity.com/std-vs-ltd): Detailed comparison of short-term vs. long-term disability insurance
+- [Term vs. Whole Life Insurance](https://secured-americanfidelity.com/term-vs-whole-life): Compare life insurance types to choose the right coverage
+- [Is American Fidelity the Same as Fidelity?](https://secured-americanfidelity.com/is-american-fidelity-the-same-as-fidelity): No — American Fidelity Assurance Company and Fidelity Investments are completely separate companies
+- [American Fidelity vs. Aflac](https://secured-americanfidelity.com/american-fidelity-vs-aflac): Supplemental insurance provider comparison
+- [American Fidelity vs. Colonial Life](https://secured-americanfidelity.com/american-fidelity-vs-colonial-life): Employer-sponsored benefits provider comparison
 
 ## Claims
-- [Claims Help Center](/claims-help): General claims information
-- [File a Disability Claim](/how-to-file-disability-claim): Step-by-step STD/LTD claim process
-- [File a Cancer Claim](/how-to-file-cancer-claim): Step-by-step cancer claim process
-- [File an Accident Claim](/how-to-file-accident-claim): Step-by-step accident claim process
+
+- [How to File a Disability Claim](https://secured-americanfidelity.com/how-to-file-disability-claim): Step-by-step STD/LTD claim process with required documentation
+- [How to File a Cancer Claim](https://secured-americanfidelity.com/how-to-file-cancer-claim): Step-by-step cancer insurance claim filing process
+- [How to File an Accident Claim](https://secured-americanfidelity.com/how-to-file-accident-claim): Step-by-step accident insurance claim filing process
+- [Claims Help Center](https://secured-americanfidelity.com/claims-help): General claims information, timelines, and support resources
 
 ## Resources
-- [Benefits Guide](/benefits-guide): All supplemental insurance products explained
-- [Open Enrollment](/open-enrollment): Annual enrollment period guide
-- [Section 125 Cafeteria Plan](/section-125-cafeteria-plan): Pre-tax benefits explained
-- [Insurance Glossary](/glossary): 50+ insurance terms defined
-- [FAQs](/faq-af): Frequently asked questions
-- [About American Fidelity](/about-american-fidelity): Company overview
-- [Security](/security-af): How we protect your data
-- [Contact Us](/contact-af): Phone, email, and online support
+
+- [Benefits Guide](https://secured-americanfidelity.com/benefits-guide): Every supplemental insurance product explained in detail
+- [Open Enrollment Guide](https://secured-americanfidelity.com/open-enrollment): Annual enrollment period, qualifying life events, and how to make changes
+- [Section 125 Cafeteria Plan](https://secured-americanfidelity.com/section-125-cafeteria-plan): Pre-tax payroll deductions for eligible insurance premiums
+- [Insurance Glossary](https://secured-americanfidelity.com/glossary): 50+ insurance and benefits terms defined in plain English
+- [About American Fidelity](https://secured-americanfidelity.com/about-american-fidelity): Company overview, history, and markets served
+- [FAQs](https://secured-americanfidelity.com/faq-af): Account access, claims, coverage, and enrollment answers
+- [Security & Privacy](https://secured-americanfidelity.com/security-af): How we protect your personal and policy information
+- [Contact Support](https://secured-americanfidelity.com/contact-af): Phone, email, and online support options
+
+## Portal Access
+
+- [Sign In](https://secured-americanfidelity.com/login): Access your American Fidelity benefits account
+- [Register](https://secured-americanfidelity.com/register): Create a new online account
 
 ## Contact
-- Phone: 800-654-8489 (Mon–Fri, 7 AM – 6 PM CT)
+
+- Phone: 800-654-8489 (Monday–Friday, 7 AM – 6 PM CT)
 - Email: support@secured-americanfidelity.com
 - Portal: https://secured-americanfidelity.com

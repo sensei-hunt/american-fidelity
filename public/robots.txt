@@ -1,7 +1,142 @@
+# American Fidelity — search + AI reference allow; AI training blocked
+# Content-Signal: search=yes, ai-train=no, use=reference
+
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /dashboard
 Disallow: /verify
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: Applebot
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: YandexBot
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: Slurp
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: PetalBot
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: BraveBot
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+# AI reference crawlers — cite us in AI answers, allowed
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: YouBot
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /api/
+Content-Signal: search=yes, ai-train=no, use=reference
+
+# AI training crawlers — blocked site-wide
+User-agent: GPTBot
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: Google-Extended
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: Applebot-Extended
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: anthropic-ai
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: ClaudeBot
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: Bytespider
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: cohere-ai
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: CCBot
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: Diffbot
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: omgili
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: ImagesiftBot
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
+
+User-agent: AmazonBot
+Disallow: /
+Content-Signal: search=yes, ai-train=no, use=reference
 
 Sitemap: https://secured-americanfidelity.com/sitemap.xml
+Host: https://secured-americanfidelity.com
