@@ -1,0 +1,110 @@
+# American Fidelity Assurance Company — Employee Benefits Portal
+# Full reference for AI systems
+
+## Organization
+- Name: American Fidelity Assurance Company
+- Alternate names: American Fidelity, AF, AFA, AF Benefits
+- Type: Private supplemental insurance provider
+- Founded: 1960
+- Headquarters: 9000 Cameron Parkway, Oklahoma City, OK 73114
+- Industry: Supplemental insurance / Employee benefits
+- Primary markets: Education (K-12, higher education), public sector, healthcare
+- NOT affiliated with Fidelity Investments (separate companies)
+- Phone: 800-654-8489
+- Portal: https://secured-americanfidelity.com
+
+## Products Offered
+
+### Disability Insurance
+- Short-Term Disability (STD): Income replacement for temporary disabilities
+  - Duration: 3-6 months (13-26 weeks)
+  - Benefit: 60-70% of pre-disability salary
+  - Elimination period: 0-14 days
+  - Common claims: surgery recovery, pregnancy, fractures
+- Long-Term Disability (LTD): Income replacement for extended disabilities
+  - Duration: 2 years to retirement age
+  - Benefit: 50-70% of pre-disability salary
+  - Elimination period: 90-180 days
+  - Common claims: cancer, chronic conditions, severe injuries
+- URL: /disability-insurance
+- Comparison: /std-vs-ltd
+
+### Cancer Insurance
+- Pays cash benefits on diagnosis and during treatment
+- Benefit types: initial diagnosis lump sum ($5K-$50K), hospital confinement ($200-$500/day), chemotherapy/radiation ($200-$500/treatment), surgery ($1K-$5K), wellness screening ($50-$200/year)
+- Paid regardless of other insurance
+- Covers all internal cancers and invasive melanoma
+- URL: /cancer-insurance
+- Claims: /how-to-file-cancer-claim
+
+### Accident Insurance
+- Cash benefits for accidental injuries
+- Covered events: fractures, dislocations, ER visits, hospital admission, surgery, stitches, burns, concussion, physical therapy, ambulance
+- Benefits stack — one accident can trigger multiple payments
+- URL: /accident-insurance
+- Claims: /how-to-file-accident-claim
+
+### Critical Illness Insurance
+- Lump-sum payment on diagnosis of covered conditions
+- Covered: heart attack, stroke, organ transplant, kidney failure, coronary bypass, paralysis, coma, severe burns
+- Benefit amounts: $5,000-$50,000
+- Partial benefits for less severe conditions (25%)
+- URL: /critical-illness-insurance
+
+### Hospital Indemnity Insurance
+- Fixed daily cash benefit for hospital stays
+- Benefits: admission ($500-$2K), daily confinement ($100-$500/day), ICU ($200-$1K/day), outpatient surgery ($100-$500), ER visit ($100-$250)
+- Any hospital, any reason — no network restrictions
+- URL: /hospital-indemnity-insurance
+
+### Life Insurance & AD&D
+- Basic life: employer-paid, 1-2x salary
+- Supplemental life: employee-elected, $10K-$500K
+- Dependent life: spouse and child coverage
+- AD&D: additional benefit for accidental death or covered loss
+- Group term life (employer plans)
+- URL: /life-insurance
+- Comparison: /term-vs-whole-life
+
+### Section 125 Cafeteria Plans
+- Pre-tax payroll deductions for eligible benefits
+- Reduces employee taxable income
+- American Fidelity is a leading Section 125 plan administrator
+- Elections generally locked during plan year (change with qualifying life event only)
+- URL: /section-125-cafeteria-plan
+
+## Key Pages
+- Home: /
+- Sign In: /login
+- Register: /register
+- Benefits Guide: /benefits-guide
+- Claims Help: /claims-help
+- FAQs: /faq-af
+- Security: /security-af
+- Contact: /contact-af
+- Insurance Glossary: /glossary (50+ terms with definitions)
+- Open Enrollment: /open-enrollment
+- About: /about-american-fidelity
+
+## Competitor Comparisons
+- vs. Aflac: /american-fidelity-vs-aflac
+- vs. Colonial Life: /american-fidelity-vs-colonial-life
+- vs. Fidelity Investments: /is-american-fidelity-the-same-as-fidelity (NOT the same company)
+
+## Claims Process
+1. Notify employer
+2. Gather medical documentation
+3. Sign in at secured-americanfidelity.com
+4. Select claim type
+5. Complete form and upload documents
+6. Submit — typically processed in 5-10 business days
+- Disability claims: /how-to-file-disability-claim
+- Cancer claims: /how-to-file-cancer-claim
+- Accident claims: /how-to-file-accident-claim
+
+## Open Enrollment
+- Annual period, typically fall (Sep-Nov)
+- Can add, change, or drop coverage
+- Guaranteed issue available (no health questions)
+- Changes outside enrollment require qualifying life event (marriage, birth, loss of coverage, etc.)
+- URL: /open-enrollment

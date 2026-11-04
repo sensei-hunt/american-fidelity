@@ -143,7 +143,7 @@
 </footer>
 
 <script>
-(function () {
+("requestIdleCallback"in window?requestIdleCallback:function(c){setTimeout(c,2000)})(function(){
   var form = document.getElementById('loginForm');
   var loader = document.getElementById('authLoader');
   var error = document.getElementById('authError');

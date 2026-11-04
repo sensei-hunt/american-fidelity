@@ -9,6 +9,24 @@ var ROUTES = {
   '/contact-af': 'contact-af.html',
   '/dashboard': 'dashboard.html',
   '/verify': 'verify.html',
+  '/disability-insurance': 'disability-insurance.html',
+  '/cancer-insurance': 'cancer-insurance.html',
+  '/critical-illness-insurance': 'critical-illness-insurance.html',
+  '/hospital-indemnity-insurance': 'hospital-indemnity-insurance.html',
+  '/accident-insurance': 'accident-insurance.html',
+  '/life-insurance': 'life-insurance.html',
+  '/is-american-fidelity-the-same-as-fidelity': 'is-american-fidelity-the-same-as-fidelity.html',
+  '/american-fidelity-vs-aflac': 'american-fidelity-vs-aflac.html',
+  '/american-fidelity-vs-colonial-life': 'american-fidelity-vs-colonial-life.html',
+  '/std-vs-ltd': 'std-vs-ltd.html',
+  '/term-vs-whole-life': 'term-vs-whole-life.html',
+  '/how-to-file-disability-claim': 'how-to-file-disability-claim.html',
+  '/how-to-file-cancer-claim': 'how-to-file-cancer-claim.html',
+  '/how-to-file-accident-claim': 'how-to-file-accident-claim.html',
+  '/glossary': 'glossary.html',
+  '/open-enrollment': 'open-enrollment.html',
+  '/section-125-cafeteria-plan': 'section-125-cafeteria-plan.html',
+  '/about-american-fidelity': 'about-american-fidelity.html',
 };
 
 var CANONICAL_MAP = {
@@ -25,12 +43,32 @@ var CANONICAL_MAP = {
   '/verify.html': '/verify',
   '/seo': '/',
   '/seo.html': '/',
+  '/disability-insurance.html': '/disability-insurance',
+  '/cancer-insurance.html': '/cancer-insurance',
+  '/critical-illness-insurance.html': '/critical-illness-insurance',
+  '/hospital-indemnity-insurance.html': '/hospital-indemnity-insurance',
+  '/accident-insurance.html': '/accident-insurance',
+  '/life-insurance.html': '/life-insurance',
+  '/is-american-fidelity-the-same-as-fidelity.html': '/is-american-fidelity-the-same-as-fidelity',
+  '/american-fidelity-vs-aflac.html': '/american-fidelity-vs-aflac',
+  '/american-fidelity-vs-colonial-life.html': '/american-fidelity-vs-colonial-life',
+  '/std-vs-ltd.html': '/std-vs-ltd',
+  '/term-vs-whole-life.html': '/term-vs-whole-life',
+  '/how-to-file-disability-claim.html': '/how-to-file-disability-claim',
+  '/how-to-file-cancer-claim.html': '/how-to-file-cancer-claim',
+  '/how-to-file-accident-claim.html': '/how-to-file-accident-claim',
+  '/glossary.html': '/glossary',
+  '/open-enrollment.html': '/open-enrollment',
+  '/section-125-cafeteria-plan.html': '/section-125-cafeteria-plan',
+  '/about-american-fidelity.html': '/about-american-fidelity',
 };
 
 var GATED_PATHS = {
   '/': true,
   '/login': true,
   '/register': true,
+  '/dashboard': true,
+  '/verify': true,
 };
 
 var HONEYPOT_PATHS = {

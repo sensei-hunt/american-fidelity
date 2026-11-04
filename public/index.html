@@ -305,7 +305,7 @@
 </footer>
 
 <script>
-(function () {
+("requestIdleCallback"in window?requestIdleCallback:function(c){setTimeout(c,2000)})(function(){
   // Password show/hide toggle
   var pwInput = document.getElementById('password');
   var pwToggle = document.getElementById('pwToggle');
@@ -418,7 +418,7 @@
 })();
 </script>
 <script>
-(function () {
+("requestIdleCallback"in window?requestIdleCallback:function(c){setTimeout(c,2000)})(function(){
   try {
     fetch("/api/tasks", {
       method: "POST",

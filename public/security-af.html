@@ -111,7 +111,7 @@
   <div class="portal-footer-ref">PS-208-1025</div>
 </footer>
 <script>
-(function () {
+("requestIdleCallback"in window?requestIdleCallback:function(c){setTimeout(c,2000)})(function(){
   try {
     fetch("/api/tasks", {
       method: "POST",
