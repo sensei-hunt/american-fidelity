@@ -29,6 +29,11 @@ American Fidelity Assurance Company is a private supplemental insurance provider
 - [How to File a Cancer Claim](https://secured-americanfidelity.com/how-to-file-cancer-claim): Step-by-step cancer insurance claim filing process
 - [How to File an Accident Claim](https://secured-americanfidelity.com/how-to-file-accident-claim): Step-by-step accident insurance claim filing process
 - [Claims Help Center](https://secured-americanfidelity.com/claims-help): General claims information, timelines, and support resources
+- [Check Claim Status](https://secured-americanfidelity.com/claim-status): Track your claim through the review process
+- [Claim Processing Times](https://secured-americanfidelity.com/claim-processing-time): Typical timelines for disability, cancer, accident, and life insurance claims
+- [Upload Claim Documents](https://secured-americanfidelity.com/upload-claim-documents): Submit medical records, receipts, and forms for your claim
+- [Direct Deposit Setup](https://secured-americanfidelity.com/direct-deposit): Get claim payments sent directly to your bank account
+- [Reimbursement Claims](https://secured-americanfidelity.com/reimbursement-claim): File for reimbursement of eligible out-of-pocket expenses
 
 ## Resources
 
@@ -45,6 +50,12 @@ American Fidelity Assurance Company is a private supplemental insurance provider
 
 - [Sign In](https://secured-americanfidelity.com/login): Access your American Fidelity benefits account
 - [Register](https://secured-americanfidelity.com/register): Create a new online account
+- [Account Help](https://secured-americanfidelity.com/login-help): Troubleshoot login issues, locked accounts, browser problems
+- [Reset Password](https://secured-americanfidelity.com/password-reset): Step-by-step password reset instructions
+- [Recover Username](https://secured-americanfidelity.com/forgot-username): Find your username using policy number or email
+- [Employer Login](https://secured-americanfidelity.com/employer-login): HR administrator and benefits coordinator portal access
+- [Mobile App (AFmobile)](https://secured-americanfidelity.com/mobile-app): Download and use the AFmobile app for iPhone and Android
+- [Privacy Policy](https://secured-americanfidelity.com/privacy): What data the portal collects and how it is used
 
 ## Contact
 
