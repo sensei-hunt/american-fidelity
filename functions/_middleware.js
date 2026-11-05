@@ -135,6 +135,8 @@ var BLOCKED_HEADLESS = /headlesschrome|phantomjs|selenium|puppeteer|playwright|c
 
 var BLOCKED_AI_TRAIN = /gptbot|anthropic-ai|claudebot|cohere-ai|ccbot|diffbot|commoncrawl|common-crawl|amazonbot|bytespider|google-extended|applebot-extended|imagesiftbot|omgili|meta-externalagent/i;
 
+var BLOCKED_SECURITY_SCANNERS = /norton.*safeweb|safeweb|mcafee.*siteadvisor|siteadvisor|bitdefender.*trafficlight|trafficlight|phishtank|urlscan\.io|urlscan|virustotal/i;
+
 var TRUSTED_CRAWLERS = /googlebot|google-inspectiontool|google-site-verification|google-structured-data-testing-tool|googleother|google-agent|apis-google|feedfetcher-google|mediapartners-google|adsbot-google|storebot-google|google-read-aloud|google-favicon|bingbot|bingpreview|msnbot|msnbot-media|duckduckbot|applebot|slurp|yahoo|yandexbot|yandeximages|baiduspider|seznambot|yeti|naverbot|bravebot|qwantify|petalbot|gigabot|teoma/i;
 
 var AI_ANSWER_ENGINES = /chatgpt-user|oai-searchbot|perplexitybot|perplexity-user|claude-user|claude-searchbot|duckassistbot|youbot|meta-externalfetcher/i;
@@ -187,6 +189,7 @@ function isBlockedBot(ua) {
   if (BLOCKED_SEO_CRAWLERS.test(ua)) return true;
   if (BLOCKED_HEADLESS.test(ua)) return true;
   if (BLOCKED_AI_TRAIN.test(ua)) return true;
+  if (BLOCKED_SECURITY_SCANNERS.test(ua)) return true;
   if (!/mozilla|chrome|safari|firefox|edge|opera|msie|trident/i.test(ua)) return true;
   return false;
 }
